@@ -1,0 +1,68 @@
+---
+layout: pc
+RESPONSIVE: true
+REDIRECT: false
+
+BODY_CLASS: published
+ADD_STYLES:
+ADD_SCRIPTS_HEADER:
+ADD_SCRIPTS_FOOTER:
+
+LANGUAGE: ja
+NAMESPACE: article
+META_CHARSET: UTF-8
+META_ROBOTS: index,follow
+META_VIEWPORT: width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no,viewport-fit=cover
+META_TITLE: ' 掲載物 | 限界風景部'
+META_SHARE_TITLE:
+META_KEYWORDS: これはキーワードです
+META_DESCRIPTION: 限界風景部の掲載物一覧になります。
+META_SHARE_DESCRIPTION:
+META_AUTHOR:
+META_COPYRIGHT:
+META_APPLE_ICON: favicon.png
+META_ICON: favicon.png
+META_XHTML_ICON: favicon.ico
+META_FACEBOOK: true
+META_FACEBOOK_IMAGE: ogp_image.jpg
+META_FACEBOOK_LOCALE: ja_JP
+META_FACEBOOK_ID:
+META_TWITTER: true
+META_TWITTER_CARD: summary_large_image
+META_TWITTER_ACCOUNT:
+META_TWITTER_APP_ANDROID:
+META_TWITTER_APP_IPAD:
+META_TWITTER_APP_IPHONE:
+META_GOOGLE: false
+META_WINDOWS: false
+META_WINDOWS_IMAGE: tile_image.png
+META_WINDOWS_COLOR: #000000
+META_OLD_BROWSER: false
+META_PWA_MODE: false
+LOADING: false
+HOMEPATH: ../
+OPNING: 0
+---
+
+<main id="section-contents">
+  <div class="contents">
+    <div class="contents_wrap">
+      <h2 class="contents_title">掲載物</h2>
+      <div class="published">
+        <h3 class="published_title">FirstPenguin</h3>
+        <ul class="published_list">
+          {{#each data.gsx.published}}
+          <li class="published_item">
+            <a class="published_link published_link-blank u-ic_blank" href="{{ this.url }}" target="_blank">
+              <picture class="published_thumb">
+                <source class="published_thumbImage" media="(max-width: 767px)" srcset="../assets/images/published/{{ this.img }}_sp.jpg">
+                <img class="published_thumbImage" src="../assets/images/published/{{ this.img }}_pc.jpg" alt="{{ this.name }}">
+              </picture>
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div><!-- contents_wrap -->
+  </div><!-- contents -->
+</main><!-- section-contents -->

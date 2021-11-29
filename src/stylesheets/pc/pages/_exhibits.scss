@@ -1,0 +1,9 @@
+/* ------------------------------------------- SASS Information
+ Name:      _exhibits.scss
+ Author:    #{$WEB_AUTHOR}
+ Modifier:  #{$WEB_MODIFIER}
+----------------------------------------------------------- */
+.page-exhibits {
+  @include RESPONSIVE('PC', $MIN_WIDTH) {}
+  @include RESPONSIVE('SP', $MIN_WIDTH) {}
+}

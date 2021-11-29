@@ -1,0 +1,11 @@
+/* ------------------------------------------- SASS Information
+ Name:      layouts/_wrapper.scss
+ Author:    #{$WEB_AUTHOR}
+ Modifier:  #{$WEB_MODIFIER}
+----------------------------------------------------------- */
+#section-wrapper {
+  width: 100%;
+  height: 100%;
+  @include RESPONSIVE('PC', $MIN_WIDTH) {}
+  @include RESPONSIVE('SP', $MIN_WIDTH) {}
+}

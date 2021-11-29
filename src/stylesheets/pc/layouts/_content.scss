@@ -1,0 +1,54 @@
+/* ------------------------------------------- SASS Information
+ Name:      layouts/_content.scss
+ Author:    #{$WEB_AUTHOR}
+ Modifier:  #{$WEB_MODIFIER}
+----------------------------------------------------------- */
+#section-contents {
+  height: 100%;
+  @include RESPONSIVE('PC', $MIN_WIDTH) {}
+  @include RESPONSIVE('SP', $MIN_WIDTH) {}
+  .contents{
+    @include RESPONSIVE('PC', $MIN_WIDTH) {
+      padding-top: calc(379px - 20vw);
+      padding-bottom: 80px;
+    }
+    @media screen and (min-width: $MIN_WIDTH) and (max-width: 1136px){
+      padding-top: 145px;
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH) {
+      padding: calc-sp(180) 0;
+      width: calc-sp(640);
+      margin: 0 auto;
+    }
+  }
+  .contents_wrap{
+    @include RESPONSIVE('PC', $MIN_WIDTH) {
+      width: 70.176%;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: $MIN_WIDTH) and (max-width: 1136px){
+      width: 800px;
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH) {}
+  }
+  .contents_title{
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    @include RESPONSIVE('PC', $MIN_WIDTH) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH) {
+      font-size: calc-sp(64);
+      line-height: calc-sp(64);
+    }
+    +*{
+      @include RESPONSIVE('PC', $MIN_WIDTH) {
+        margin-top: 80px;
+      }
+      @include RESPONSIVE('SP', $MIN_WIDTH) {
+        margin-top: calc-sp(80);
+      }
+    }
+  }
+}

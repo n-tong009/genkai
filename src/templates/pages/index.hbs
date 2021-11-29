@@ -1,0 +1,62 @@
+---
+layout: pc
+RESPONSIVE: true
+REDIRECT: false
+
+BODY_CLASS: index
+ADD_STYLES: 
+ADD_SCRIPTS_HEADER: [assets/common/js/lib/slick.min.js]
+ADD_SCRIPTS_FOOTER: 
+
+LANGUAGE: ja
+NAMESPACE: website
+META_CHARSET: UTF-8
+META_ROBOTS: index,follow
+META_VIEWPORT: width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no,viewport-fit=cover
+META_TITLE: 限界風景部
+META_SHARE_TITLE:
+META_KEYWORDS: '限界風景部,風景,写真,カメラ'
+META_DESCRIPTION: 限界風景部のWEBサイトです。
+META_SHARE_DESCRIPTION:
+META_AUTHOR:
+META_COPYRIGHT:
+META_APPLE_ICON: favicon.png
+META_ICON: favicon.png
+META_XHTML_ICON: favicon.ico
+META_FACEBOOK: true
+META_FACEBOOK_IMAGE: ogp_image.jpg
+META_FACEBOOK_LOCALE: ja_JP
+META_FACEBOOK_ID:
+META_TWITTER: true
+META_TWITTER_CARD: summary_large_image
+META_TWITTER_ACCOUNT:
+META_TWITTER_APP_ANDROID:
+META_TWITTER_APP_IPAD:
+META_TWITTER_APP_IPHONE:
+META_GOOGLE: false
+META_WINDOWS: false
+META_WINDOWS_IMAGE: tile_image.png
+META_WINDOWS_COLOR: #000000
+META_OLD_BROWSER: false
+META_PWA_MODE: false
+LOADING: true
+HOMEPATH: ./
+OPNING: 1
+---
+
+<main id="section-contents">
+  <div class="kv">
+    <div class="kv_wrap">
+      <div class="kv_wrapBox js-slick">
+      {{#each data.gsx.images}}
+        <div class="kv_wrapBg">
+          <picture class="kv_item">
+            <source class="kv_itemImage" media="(max-width: 767px)" srcset="{{#if ABSOLUTE_DIR}}/{{else}}{{ RELATIVE_PATH }}{{/if}}{{ ../ASSETS_DIR.COMMON }}images/index/{{ @index }}_sp.jpg">
+            <img class="kv_itemImage" src="{{#if ABSOLUTE_DIR}}/{{else}}{{ RELATIVE_PATH }}{{/if}}{{ ../ASSETS_DIR.COMMON }}images/index/{{ @index }}_pc.jpg" alt="{{ this }}">
+          </picture>
+        </div>
+      {{/each}}
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,72 @@
+---
+layout: pc
+RESPONSIVE: true
+REDIRECT: false
+
+BODY_CLASS: member
+ADD_STYLES:
+ADD_SCRIPTS_HEADER:
+ADD_SCRIPTS_FOOTER:
+
+LANGUAGE: ja
+NAMESPACE: article
+META_CHARSET: UTF-8
+META_ROBOTS: index,follow
+META_VIEWPORT: width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no,viewport-fit=cover
+META_TITLE: ' 部員一覧 | 限界風景部'
+META_SHARE_TITLE:
+META_KEYWORDS: これはキーワードです
+META_DESCRIPTION: 限界風景部の部員一覧になります。
+META_SHARE_DESCRIPTION:
+META_AUTHOR:
+META_COPYRIGHT:
+META_APPLE_ICON: favicon.png
+META_ICON: favicon.png
+META_XHTML_ICON: favicon.ico
+META_FACEBOOK: true
+META_FACEBOOK_IMAGE: ogp_image.jpg
+META_FACEBOOK_LOCALE: ja_JP
+META_FACEBOOK_ID:
+META_TWITTER: true
+META_TWITTER_CARD: summary_large_image
+META_TWITTER_ACCOUNT:
+META_TWITTER_APP_ANDROID:
+META_TWITTER_APP_IPAD:
+META_TWITTER_APP_IPHONE:
+META_GOOGLE: false
+META_WINDOWS: false
+META_WINDOWS_IMAGE: tile_image.png
+META_WINDOWS_COLOR: #000000
+META_OLD_BROWSER: false
+META_PWA_MODE: false
+LOADING: false
+HOMEPATH: ../
+OPNING: 0
+---
+
+<main id="section-contents">
+  <div class="contents">
+    <div class="contents_wrap">
+      <h2 class="contents_title">部員一覧</h2>
+      <div class="member">
+        <ul class="member_list">
+          {{#each data.gsx.member}}
+          <li class="member_item" data-index="{{ @index }}">
+            <figure class="member_thumb">
+              <picture class="member_thumbItem">
+                <source class="member_thumbImage" media="(max-width: 767px)" srcset="../assets/images/member/{{ this.img }}_sp.jpg">
+                <img class="member_thumbImage" src="../assets/images/member/{{ this.img }}_pc.jpg" alt="">
+              </picture>
+            </figure>
+            <h3 class="member_name">{{ this.name }}</h3>
+            <div class="member_sns">
+              <span class="member_snsIcon member_twitter"><a class="member_snsLink member_twitterLink" href="https://twitter.com/{{ this.twitter }}"><img class="member_twitterImage" src="../assets/images/common/sns_twitter.svg" alt="twitter"></a></span>
+              <span class="member_snsIcon member_instagram"><a class="member_snsLink member_instagramLink" href="https://www.instagram.com/{{ this.instagram }}/"><img class="member_instagramImage" src="../assets/images/common/sns_instagram.svg" alt="instagram"></a></span>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div><!-- contents_wrap -->
+  </div><!-- contents -->
+</main><!-- section-contents -->

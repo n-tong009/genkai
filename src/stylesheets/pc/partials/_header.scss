@@ -1,0 +1,76 @@
+/* ------------------------------------------- SASS Information
+ Name:      partials/_header.scss
+ Author:    #{$WEB_AUTHOR}
+ Modifier:  #{$WEB_MODIFIER}
+----------------------------------------------------------- */
+#section-header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  pointer-events: none;
+  @media screen and (min-width: $MIN_WIDTH) and (max-width: 1136px){
+    position: absolute;
+  }
+  @include RESPONSIVE('PC', $MIN_WIDTH) {
+    width: 100%;
+    height: 100%;
+    right: 0;
+  }
+  @include RESPONSIVE('SP', $MIN_WIDTH) {
+    width: calc-sp(600);
+    height: calc-sp(180);
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .header{
+    position: absolute;
+    height: 100%;
+    @include RESPONSIVE('PC', $MIN_WIDTH){
+      right: 0;
+      width: 14.944%;
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH){
+      width: 100%;
+    }
+  }
+  .header_title{
+    position: absolute;
+    pointer-events: painted;
+    @include RESPONSIVE('PC', $MIN_WIDTH){
+      width: 47.28%;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%,50%);
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH){
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .header_titleLink{
+    opacity: 1;
+    transition: opacity ease .3s ;
+    @include RESPONSIVE('PC', $MIN_WIDTH){
+      &:hover{
+        opacity: 0.65;
+      }
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH){}
+  }
+  .header_titleWrap{
+    @include RESPONSIVE('PC', $MIN_WIDTH){}
+    @include RESPONSIVE('SP', $MIN_WIDTH){
+      height: calc-sp(100);
+      display: inline-block;
+    }
+  }
+  .header_titleImage{
+    @include RESPONSIVE('PC', $MIN_WIDTH){
+      width: 100%;
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH){
+      height: 100%;
+    }
+  }
+}
