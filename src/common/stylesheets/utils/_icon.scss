@@ -1,0 +1,17 @@
+// ------------------------------------------- SASS Information
+//  Name:      utils/_icon.scss
+//  Author:    d.kawabata
+// -----------------------------------------------------------
+
+.u-ic_blank{
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    // background: url($COMMON_PATH + 'ic_blank.svg') no-repeat 0 0 / 100% auto;
+    background-image: url($COMMON_PATH + 'ic_blank.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+  }
+}

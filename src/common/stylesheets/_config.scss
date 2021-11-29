@@ -1,0 +1,78 @@
+// ------------------------------------------- SASS Information
+//  Name:      _config.scss
+//  Author:    GlitchWorker
+// -----------------------------------------------------------
+
+// -----------------------------------------------------------
+//  FUNCTIONS
+// -----------------------------------------------------------
+
+$BASE_COLOR: #f3f3f3;
+
+$MIN_WIDTH: 780px;
+
+$MAX_WIDTH: 1280px;
+
+$FONT_FAMILY: 'Noto Serif JP', serif, Meiryo, "メイリオ", Osaka, "ＭＳ Ｐゴシック", serif;
+
+$FONT_SIZE: 16px;
+
+$LINE_HEIGHT: 1.8;
+
+$FONT_COLOR: #000;
+
+$LINK_COLOR: $FONT_COLOR;
+
+$COMMON_PATH: "../common/images/";
+
+$IMAGE_PATH: "../images/";
+
+// -----------------------------------------------------------
+//  VARS
+// -----------------------------------------------------------
+
+// @import 'vars/color';
+// @import 'vars/easing';
+
+// -----------------------------------------------------------
+//  MIXINS
+// -----------------------------------------------------------
+
+@import 'mixins/fontSize';
+@import 'mixins/fontWeight';
+@import 'mixins/fontDecoration';
+@import 'mixins/elementSize';
+@import 'mixins/clearfix';
+@import 'mixins/hideaway';
+@import 'mixins/opacity';
+@import 'mixins/inlineBlock';
+@import 'mixins/mediaqueries';
+@import 'mixins/css3fix';
+// @import 'mixins/inlinefix';
+
+// -----------------------------------------------------------
+//  STYLES: utils
+// -----------------------------------------------------------
+
+@import 'utils/icon';
+// @import 'utils/font';
+// @import 'utils/align';
+// @import 'utils/float';
+// @import 'utils/margin';
+// @import 'utils/padding';
+// @import 'utils/width';
+// @import 'utils/display';
+// @import 'utils/visibility';
+// @import 'utils/tooltips';
+
+// -----------------------------------------------------------
+//  STYLES: reset
+// -----------------------------------------------------------
+
+@import 'reset';
+
+// -----------------------------------------------------------
+//  STYLES: reset
+// -----------------------------------------------------------
+
+@import 'slick';
