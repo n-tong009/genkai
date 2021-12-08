@@ -86,11 +86,19 @@
     @include RESPONSIVE('PC', $MIN_WIDTH) {}
     @include RESPONSIVE('SP', $MIN_WIDTH) {}
   }
+  #section-contents{
+    @include RESPONSIVE('PC', $MIN_WIDTH) {height: 100%;}
+    @include RESPONSIVE('SP', $MIN_WIDTH) {}
+  }
   #section-footer{
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    @include RESPONSIVE('PC', $MIN_WIDTH) {bottom: 10px;}
-    @include RESPONSIVE('SP', $MIN_WIDTH) {bottom: 0;}
+    @include RESPONSIVE('PC', $MIN_WIDTH) {
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+      bottom: 10px;
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH) {
+      padding-top: calc(183vw - (100vw * (250 / 750)));
+    }
   }
 }

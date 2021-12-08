@@ -54,14 +54,14 @@ OPNING: 0
           <li class="member_item" data-index="{{ @index }}">
             <figure class="member_thumb">
               <picture class="member_thumbItem">
-                <source class="member_thumbImage" media="(max-width: 767px)" srcset="../assets/images/member/{{ this.img }}_sp.jpg">
-                <img class="member_thumbImage" src="../assets/images/member/{{ this.img }}_pc.jpg" alt="">
+                <source class="member_thumbImage" media="(max-width: 767px)" srcset="../assets/images/member/{{ this.img }}_sp.jpg{{ ../ASSETS_VERSION }}">
+                <img class="member_thumbImage" src="../assets/images/member/{{ this.img }}_pc.jpg{{ ../ASSETS_VERSION }}" alt="">
               </picture>
             </figure>
             <h3 class="member_name">{{ this.name }}</h3>
             <div class="member_sns">
-              <span class="member_snsIcon member_twitter"><a class="member_snsLink member_twitterLink" href="https://twitter.com/{{ this.twitter }}"><img class="member_twitterImage" src="../assets/images/common/sns_twitter.svg" alt="twitter"></a></span>
-              <span class="member_snsIcon member_instagram"><a class="member_snsLink member_instagramLink" href="https://www.instagram.com/{{ this.instagram }}/"><img class="member_instagramImage" src="../assets/images/common/sns_instagram.svg" alt="instagram"></a></span>
+              <span class="member_snsIcon member_twitter"><a class="member_snsLink member_twitterLink" href="https://twitter.com/{{ this.twitter }}"><img class="member_twitterImage" src="../assets/images/common/sns_twitter.svg{{ ../ASSETS_VERSION }}" alt="twitter"></a></span>
+              <span class="member_snsIcon member_instagram"><a class="member_snsLink member_instagramLink" href="https://www.instagram.com/{{ this.instagram }}/"><img class="member_instagramImage" src="../assets/images/common/sns_instagram.svg{{ ../ASSETS_VERSION }}" alt="instagram"></a></span>
             </div>
           </li>
           {{/each}}

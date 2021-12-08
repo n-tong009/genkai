@@ -4,7 +4,7 @@
  Modifier:  #{$WEB_MODIFIER}
 ----------------------------------------------------------- */
 #section-contents {
-  @include RESPONSIVE('PC', $MIN_WIDTH) {height: 100%;}
+  @include RESPONSIVE('PC', $MIN_WIDTH) {}
   @include RESPONSIVE('SP', $MIN_WIDTH) {}
   .contents{
     @include RESPONSIVE('PC', $MIN_WIDTH) {
