@@ -3,8 +3,8 @@
     <h1 class="header_title">
       <a class="header_titleLink" href="{{ HOMEPATH }}{{#if OPNING }}{{else}}?opening=0{{/if}}">
         <picture class="header_titleWrap">
-          <source class="header_titleImage" media="(max-width: 767px)" srcset="{{ RELATIVE_PATH }}{{ASSETS_DIR.COMMON}}common/images/logo1.svg">
-          <img class="header_titleImage" src="{{ RELATIVE_PATH }}{{ASSETS_DIR.COMMON}}common/images/logo2.svg" alt="限界風景部">
+          <source class="header_titleImage" media="(max-width: 767px)" srcset="{{ RELATIVE_PATH }}{{ASSETS_DIR.COMMON}}common/images/logo1.svg{{ ASSETS_VERSION }}">
+          <img class="header_titleImage" src="{{ RELATIVE_PATH }}{{ASSETS_DIR.COMMON}}common/images/logo2.svg{{ ASSETS_VERSION }}" alt="限界風景部">
         </picture>
       </a>
     </h1>

@@ -1,3 +1,4 @@
+import {TweenMax,TimelineMax} from "gsap";
 class CommonBody {
 
   constructor() {
@@ -22,10 +23,28 @@ class CommonBody {
  */
 function navAction(){
   let $this = $(this);
-  // console.log(this);
+  let $sectionNav = $('#section-nav');
+  let $body = $('body');
+  let tl = new TimelineMax();
   if($this.hasClass('active')){
-    $this.removeClass('active').parents('.nav').removeClass('active');
+    tl.to($sectionNav, 1.6, {
+      onStart : function(){
+        $body.css('overflow','visible');
+        $this.removeClass('active').parents('.nav').removeClass('active');
+      },
+      delay : 0,
+      onComplete : function(){
+        // 1フレームずらず
+        window.requestAnimationFrame(() => {
+          tl.to($section_loading, 0.5,{
+            "position": "absolute",
+          });
+        });
+      }
+    });
   } else {
+    $body.css('overflow','hidden');
+    $sectionNav.css('position','fixed');
     $this.addClass('active').parents('.nav').addClass('active');
   }
 }
@@ -35,7 +54,26 @@ function navAction(){
  */
 function navClose(){
   let $this = $(this);
-  $this.parents('.nav').removeClass('active').find('.nav_btnItem').removeClass('active');
+  let $sectionNav = $('#section-nav');
+  let $body = $('body');
+  let tl = new TimelineMax();
+  
+
+  tl.to($sectionNav, 1.6, {
+    onStart : function(){
+      $body.css('overflow','visible');
+      $this.parents('.nav').removeClass('active').find('.nav_btnItem').removeClass('active');
+    },
+    delay : 0,
+    onComplete : function(){
+      // 1フレームずらず
+      window.requestAnimationFrame(() => {
+        tl.to($section_loading, 0.5,{
+          "position": "absolute",
+        });
+      });
+    }
+  });
 }
 
 

@@ -3,10 +3,11 @@
   "WEB_AUTHOR": "これは作成者です",
   "WEB_MODIFIER": "これは編集者です",
   "SITE_URL": {
-    "DEV": "http://dev.hoge.com/",
+    "DEV": "http://genkai.mods.jp/",
     "STG": "http://stg.hoge.com/",
     "PROD": "http://prod.hoge.com/"
   },
+  "ASSETS_VERSION": "?p=2021120901",
   "CURRENT_DIR": "",
   "ABSOLUTE_DIR": false,
   "ASSETS_DIR": {

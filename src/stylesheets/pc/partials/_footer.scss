@@ -4,10 +4,19 @@
  Modifier:  #{$WEB_MODIFIER}
 ----------------------------------------------------------- */
 #section-footer {
-  @include RESPONSIVE('PC', $MIN_WIDTH) {
-
+  @include RESPONSIVE('PC', $MIN_WIDTH) {}
+  @include RESPONSIVE('SP', $MIN_WIDTH) {}
+  .footer_copy{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    @include RESPONSIVE('PC', $MIN_WIDTH) {}
+    @include RESPONSIVE('SP', $MIN_WIDTH) {
+      padding-bottom: calc-sp(20);
+    }
   }
-  @include RESPONSIVE('SP', $MIN_WIDTH) {
-
+  .footer_copyText{
+    @include RESPONSIVE('PC', $MIN_WIDTH) {}
+    @include RESPONSIVE('SP', $MIN_WIDTH) {}
   }
 }

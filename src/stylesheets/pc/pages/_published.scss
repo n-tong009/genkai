@@ -10,6 +10,18 @@
     @include RESPONSIVE('PC', $MIN_WIDTH) {}
     @include RESPONSIVE('SP', $MIN_WIDTH) {}
   }
+  .published_wrap{
+    @include RESPONSIVE('PC', $MIN_WIDTH) {}
+    @include RESPONSIVE('SP', $MIN_WIDTH) {}
+    &+.published_wrap{
+      @include RESPONSIVE('PC', $MIN_WIDTH) {
+        margin-top: 80px;
+      }
+      @include RESPONSIVE('SP', $MIN_WIDTH) {
+        margin-top: calc-sp(120);
+      }
+    }
+  }
   .published_title{
     letter-spacing: 0.05em;
     @include RESPONSIVE('PC', $MIN_WIDTH) {
@@ -18,8 +30,8 @@
       margin-top: 16px;
     }
     @include RESPONSIVE('SP', $MIN_WIDTH) {
-      font-size: calc-sp(40);
-      line-height: calc-sp(40);
+      font-size: calc-sp(48);
+      line-height: calc-sp(64);
       margin-top: calc-sp(16);
     }
   }
@@ -30,13 +42,14 @@
       margin-top: 40px;
     }
     @include RESPONSIVE('SP', $MIN_WIDTH) {
-      margin-top: calc-sp(40);
+      margin-top: calc-sp(60);
     }
   }
   .published_item{
     @include RESPONSIVE('PC', $MIN_WIDTH) {
       width: calc(100%/3);
       padding: 0 24px;
+      text-align: center;
       &:nth-of-type(n+4){
         margin-top: 60px;
       }

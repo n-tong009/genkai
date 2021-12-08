@@ -4,19 +4,18 @@
  Modifier:  #{$WEB_MODIFIER}
 ----------------------------------------------------------- */
 #section-contents {
-  height: 100%;
-  @include RESPONSIVE('PC', $MIN_WIDTH) {}
+  @include RESPONSIVE('PC', $MIN_WIDTH) {height: 100%;}
   @include RESPONSIVE('SP', $MIN_WIDTH) {}
   .contents{
     @include RESPONSIVE('PC', $MIN_WIDTH) {
-      padding-top: calc(379px - 20vw);
+      padding-top: 145px;
       padding-bottom: 80px;
     }
     @media screen and (min-width: $MIN_WIDTH) and (max-width: 1136px){
       padding-top: 145px;
     }
     @include RESPONSIVE('SP', $MIN_WIDTH) {
-      padding: calc-sp(180) 0;
+      padding: calc-sp(180) 0 calc-sp(80);
       width: calc-sp(640);
       margin: 0 auto;
     }
@@ -29,7 +28,9 @@
     @media screen and (min-width: $MIN_WIDTH) and (max-width: 1136px){
       width: 800px;
     }
-    @include RESPONSIVE('SP', $MIN_WIDTH) {}
+    @include RESPONSIVE('SP', $MIN_WIDTH) {
+      margin-top: calc-sp(20);
+    }
   }
   .contents_title{
     font-weight: bold;
@@ -39,8 +40,8 @@
       line-height: 40px;
     }
     @include RESPONSIVE('SP', $MIN_WIDTH) {
-      font-size: calc-sp(64);
-      line-height: calc-sp(64);
+      font-size: calc-sp(72);
+      line-height: calc-sp(72);
     }
     +*{
       @include RESPONSIVE('PC', $MIN_WIDTH) {

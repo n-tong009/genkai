@@ -51,8 +51,8 @@ OPNING: 1
       {{#each data.gsx.images}}
         <div class="kv_wrapBg">
           <picture class="kv_item">
-            <source class="kv_itemImage" media="(max-width: 767px)" srcset="{{#if ABSOLUTE_DIR}}/{{else}}{{ RELATIVE_PATH }}{{/if}}{{ ../ASSETS_DIR.COMMON }}images/index/{{ @index }}_sp.jpg">
-            <img class="kv_itemImage" src="{{#if ABSOLUTE_DIR}}/{{else}}{{ RELATIVE_PATH }}{{/if}}{{ ../ASSETS_DIR.COMMON }}images/index/{{ @index }}_pc.jpg" alt="{{ this }}">
+            <source class="kv_itemImage" media="(max-width: 767px)" srcset="{{#if ABSOLUTE_DIR}}/{{else}}{{ RELATIVE_PATH }}{{/if}}{{ ../ASSETS_DIR.COMMON }}images/index/{{ @index }}_sp.jpg{{ ../ASSETS_VERSION }}">
+            <img class="kv_itemImage" src="{{#if ABSOLUTE_DIR}}/{{else}}{{ RELATIVE_PATH }}{{/if}}{{ ../ASSETS_DIR.COMMON }}images/index/{{ @index }}_pc.jpg{{ ../ASSETS_VERSION }}" alt="{{ this }}">
           </picture>
         </div>
       {{/each}}

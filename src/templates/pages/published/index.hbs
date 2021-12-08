@@ -13,7 +13,7 @@ NAMESPACE: article
 META_CHARSET: UTF-8
 META_ROBOTS: index,follow
 META_VIEWPORT: width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no,viewport-fit=cover
-META_TITLE: ' 掲載物 | 限界風景部'
+META_TITLE: '掲載物 | 限界風景部'
 META_SHARE_TITLE:
 META_KEYWORDS: これはキーワードです
 META_DESCRIPTION: 限界風景部の掲載物一覧になります。
@@ -49,19 +49,34 @@ OPNING: 0
     <div class="contents_wrap">
       <h2 class="contents_title">掲載物</h2>
       <div class="published">
-        <h3 class="published_title">FirstPenguin</h3>
-        <ul class="published_list">
-          {{#each data.gsx.published}}
-          <li class="published_item">
-            <a class="published_link published_link-blank u-ic_blank" href="{{ this.url }}" target="_blank">
-              <picture class="published_thumb">
-                <source class="published_thumbImage" media="(max-width: 767px)" srcset="../assets/images/published/{{ this.img }}_sp.jpg">
-                <img class="published_thumbImage" src="../assets/images/published/{{ this.img }}_pc.jpg" alt="{{ this.name }}">
-              </picture>
-            </a>
-          </li>
-          {{/each}}
-        </ul>
+        <section class="published_wrap">
+          <h3 class="published_title">限界風景部写真展 <br class="u-sp">カタログブック</h3>
+          <ul class="published_list">
+            <li class="published_item">
+              <a class="published_link published_link-blank u-ic_blank" href="https://genkaifukei.base.shop/items/56269573" target="_blank">
+                <picture class="published_thumb">
+                  <source class="published_thumbImage" media="(max-width: 767px)" srcset="../assets/images/published/catalogbook_sp.jpg{{ ASSETS_VERSION }}">
+                  <img class="published_thumbImage" src="../assets/images/published/catalogbook_pc.jpg{{ ASSETS_VERSION }}" alt="">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="published_wrap">
+          <h3 class="published_title">FirstPenguin</h3>
+          <ul class="published_list">
+            {{#each data.gsx.published}}
+            <li class="published_item">
+              <a class="published_link published_link-blank u-ic_blank" href="{{ this.url }}" target="_blank">
+                <picture class="published_thumb">
+                  <source class="published_thumbImage" media="(max-width: 767px)" srcset="../assets/images/published/{{ this.img }}_sp.jpg{{ ../ASSETS_VERSION }}">
+                  <img class="published_thumbImage" src="../assets/images/published/{{ this.img }}_pc.jpg{{ ../ASSETS_VERSION }}" alt="{{ this.name }}">
+                </picture>
+              </a>
+            </li>
+            {{/each}}
+          </ul>
+        </section>
       </div>
     </div><!-- contents_wrap -->
   </div><!-- contents -->

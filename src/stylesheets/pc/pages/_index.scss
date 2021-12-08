@@ -86,4 +86,11 @@
     @include RESPONSIVE('PC', $MIN_WIDTH) {}
     @include RESPONSIVE('SP', $MIN_WIDTH) {}
   }
+  #section-footer{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    @include RESPONSIVE('PC', $MIN_WIDTH) {bottom: 10px;}
+    @include RESPONSIVE('SP', $MIN_WIDTH) {bottom: 0;}
+  }
 }
