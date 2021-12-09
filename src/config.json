@@ -3,7 +3,7 @@
   "WEB_AUTHOR": "これは作成者です",
   "WEB_MODIFIER": "これは編集者です",
   "SITE_URL": {
-    "DEV": "http://genkai.mods.jp/",
+    "DEV": "https://genkai.mods.jp/",
     "STG": "http://stg.hoge.com/",
     "PROD": "http://prod.hoge.com/"
   },
