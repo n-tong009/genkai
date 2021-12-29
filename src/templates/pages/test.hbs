@@ -1,0 +1,113 @@
+---
+layout: pc
+RESPONSIVE: true
+REDIRECT: false
+
+BODY_CLASS: test
+ADD_STYLES: 
+ADD_SCRIPTS_HEADER: [assets/common/js/lib/slick.min.js]
+ADD_SCRIPTS_FOOTER: 
+
+LANGUAGE: ja
+NAMESPACE: website
+META_CHARSET: UTF-8
+META_ROBOTS: test,follow
+META_VIEWPORT: width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no,viewport-fit=cover
+META_TITLE: 限界風景部
+META_SHARE_TITLE:
+META_KEYWORDS: '限界風景部,風景,ランドスケープ,Landscape,シティスケープ,Cityscape,天体写真,Astrophotography,写真,photography,カメラ,camera'
+META_DESCRIPTION: 限界風景部のWEBサイトです。
+META_SHARE_DESCRIPTION:
+META_AUTHOR:
+META_COPYRIGHT:
+META_APPLE_ICON: favicon.png
+META_ICON: favicon.png
+META_XHTML_ICON: favicon.ico
+META_FACEBOOK: true
+META_FACEBOOK_IMAGE: ogp_image.jpg
+META_FACEBOOK_LOCALE: ja_JP
+META_FACEBOOK_ID:
+META_TWITTER: true
+META_TWITTER_CARD: summary_large_image
+META_TWITTER_ACCOUNT:
+META_TWITTER_APP_ANDROID:
+META_TWITTER_APP_IPAD:
+META_TWITTER_APP_IPHONE:
+META_GOOGLE: false
+META_WINDOWS: false
+META_WINDOWS_IMAGE: tile_image.png
+META_WINDOWS_COLOR: #000000
+META_OLD_BROWSER: false
+META_PWA_MODE: false
+LOADING: false
+HOMEPATH: ./
+OPNING: 1
+---
+<script>
+  fetch("https://genkai.microcms.io/api/v1/news/ft5av9-36c", {
+    headers: {
+      "X-MICROCMS-API-KEY": "fd9ef4db58914712974c13cdd7a8688ed0d0"
+    }
+  })
+    .then(res => res.json())
+    .then(json => {
+      document.getElementById("id").innerHTML = json.id;
+      document.getElementById("title").innerHTML = json.title;
+      document.getElementById("lead").innerHTML = json.lead;
+      document.getElementById("text").innerHTML = json.text;
+      document.getElementById("kvUrl").innerHTML = json.kv.url;
+      document.getElementById("kvHeight").innerHTML = json.kv.height;
+      document.getElementById("kvWidth").innerHTML = json.kv.width;
+      document.getElementById("imageUrl").innerHTML = json.image.url;
+      document.getElementById("imageHeight").innerHTML = json.image.height;
+      document.getElementById("imageWidth").innerHTML = json.image.width;
+      console.log(json);
+    })
+</script>
+<main id="section-contents">
+  <div id="id"></div>
+  <div id="title"></div>
+  <div id="lead"></div>
+  <div id="text"></div>
+  {{!-- <div id="kvUrl"></div> --}}
+  <div id="kvUrl"></div>
+  <div id="kvHeight"></div>
+  <div id="kvWidth"></div>
+  <div id="imageUrl"></div>
+  <div id="imageHeight"></div>
+  <div id="imageWidth"></div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+      document.getElementById("kvUrl").innerHTML = json.kv.url;
+      document.getElementById("kvHeight").innerHTML = json.kv.height;
+      document.getElementById("kvWidth").innerHTML = json.kv.width;
+      document.getElementById("imageUrl").innerHTML = json.image.url;
+      document.getElementById("imageHeight").innerHTML = json.image.height;
+      document.getElementById("imageWidth").innerHTML = json.image.width;
+{
+    "id": "ft5av9-36c",
+    "createdAt": "2021-12-29T17:22:09.745Z",
+    "updatedAt": "2021-12-29T17:35:32.155Z",
+    "publishedAt": "2021-12-29T17:22:09.745Z",
+    "revisedAt": "2021-12-29T17:35:32.155Z",
+    "title": "gagaテスト",
+    "lead": "dadadaテスト",
+    "kv": {
+        "url": "https://images.microcms-assets.io/assets/45d20c06ca4a4ab4bfc6bbc556cb4aec/65b5a8ad2d2e4cf3a87c1fabbd30be60/9186.jpg",
+        "height": 1280,
+        "width": 1280
+    },
+    "text": "<p>testtesttestdadada<br>ガガガSP<br><strong>ボールド</strong><br><s>消し込み</s><br><a href=\"#\">リンク</a></p>",
+    "image": {
+        "url": "https://images.microcms-assets.io/assets/45d20c06ca4a4ab4bfc6bbc556cb4aec/17e99834bd1546bd9775dd72cfad582a/9185.png",
+        "height": 1522,
+        "width": 1076
+    }
+}
+</main>
