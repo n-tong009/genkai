@@ -60,8 +60,9 @@ OPNING: 0
             </figure>
             <h3 class="member_name">{{ this.name }}</h3>
             <div class="member_sns">
-              <span class="member_snsIcon member_twitter"><a class="member_snsLink member_twitterLink" href="https://twitter.com/{{ this.twitter }}"><img class="member_twitterImage" src="../assets/images/common/sns_twitter.svg{{ ../ASSETS_VERSION }}" alt="twitter"></a></span>
-              <span class="member_snsIcon member_instagram"><a class="member_snsLink member_instagramLink" href="https://www.instagram.com/{{ this.instagram }}/"><img class="member_instagramImage" src="../assets/images/common/sns_instagram.svg{{ ../ASSETS_VERSION }}" alt="instagram"></a></span>
+              {{#if this.twitter }}<span class="member_snsIcon member_twitter"><a class="member_snsLink member_twitterLink" href="https://twitter.com/{{ this.twitter }}" target="_blank" rel="noopener"><img class="member_twitterImage" src="../assets/images/common/sns_twitter.svg{{ ../ASSETS_VERSION }}" alt="twitter"></a></span>{{/if}}
+              {{#if this.instagram }}<span class="member_snsIcon member_instagram"><a class="member_snsLink member_instagramLink" href="https://www.instagram.com/{{ this.instagram }}/" target="_blank" rel="noopener"><img class="member_instagramImage" src="../assets/images/common/sns_instagram.svg{{ ../ASSETS_VERSION }}" alt="instagram"></a></span>{{/if}}
+              {{#if this.note }}<span class="member_snsIcon member_note"><a class="member_snsLink member_noteLink" href="https://note.com/{{ this.note }}/" target="_blank" rel="noopener"><img class="member_noteImage" src="../assets/images/common/sns_note.svg{{ ../ASSETS_VERSION }}" alt="note"></a></span>{{/if}}
             </div>
           </li>
           {{/each}}

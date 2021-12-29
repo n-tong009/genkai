@@ -143,4 +143,21 @@
     @include RESPONSIVE('PC', $MIN_WIDTH) {}
     @include RESPONSIVE('SP', $MIN_WIDTH) {}
   }
+  .member_note{
+    @include RESPONSIVE('PC', $MIN_WIDTH) {}
+    @include RESPONSIVE('SP', $MIN_WIDTH) {}
+  }
+  .member_noteLink{
+    @include RESPONSIVE('PC', $MIN_WIDTH) {
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH) {}
+  }
+  .member_noteImage{
+    @include RESPONSIVE('PC', $MIN_WIDTH) {
+      padding: 2px;
+    }
+    @include RESPONSIVE('SP', $MIN_WIDTH) {
+      padding: calc-sp(4);
+    }
+  }
 }

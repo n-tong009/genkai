@@ -11,139 +11,162 @@
       "name": "前山",
       "img": "xxakaxxv",
       "twitter": "xxakaxxv",
-      "instagram": "momonami_2018"
+      "instagram": "momonami_2018",
+      "note": "yomogi0413"
     },
     {
       "name": "LeoN",
       "img": "Leon_photo101",
       "twitter": "Leon_photo101",
-      "instagram": "leon_photo1"
-    },
-    {
-      "name": "てらぬ〜",
-      "img": "teranu_photo",
-      "twitter": "teranu_photo",
-      "instagram": "teranu_photo"
-    },
-    {
-      "name": "messi",
-      "img": "messi0601",
-      "twitter": "messi0601",
-      "instagram": "messi__0601"
+      "instagram": "leon_photo1",
+      "note": ""
     },
     {
       "name": "唯野みりん",
       "img": "tadanomirin",
       "twitter": "tadanomirin",
-      "instagram": "tadanomirin"
+      "instagram": "tadanomirin",
+      "note": "tadanomirin"
     },
     {
       "name": "葉月希緑",
       "img": "ki6_hazuki",
       "twitter": "ki6_hazuki",
-      "instagram": "ki6_hazuki"
+      "instagram": "ki6_hazuki",
+      "note": ""
     },
     {
       "name": "なつなみ",
       "img": "natsunami___",
       "twitter": "natsunami___",
-      "instagram": "natsunami___"
+      "instagram": "natsunami___",
+      "note": "n056e8a865464"
     },
     {
       "name": "つよぽん",
       "img": "sportsstyle_vab",
       "twitter": "sportsstyle_vab",
-      "instagram": "sportsstyle_vab"
-    },
-    {
-      "name": "神谷",
-      "img": "kmyyyyy_07",
-      "twitter": "kmyyyyy_07",
-      "instagram": "kmyyyyy_07"
-    },
-    {
-      "name": "kix.",
-      "img": "KIX_dayinmylife",
-      "twitter": "KIX_dayinmylife",
-      "instagram": "kix.dayinmylife"
-    },
-    {
-      "name": "和×🄺🄰🅉🅄",
-      "img": "kz_photographs",
-      "twitter": "kz_photographs",
-      "instagram": "kz_photographs__"
-    },
-    {
-      "name": "naok",
-      "img": "nyaoayn",
-      "twitter": "nyaoayn",
-      "instagram": "naok_a2"
+      "instagram": "sportsstyle_vab",
+      "note": "tsuyoshi_kaneko"
     },
     {
       "name": "にとんぐ",
       "img": "N_tong009",
       "twitter": "N_tong009",
-      "instagram": "n_tong003"
+      "instagram": "n_tong003",
+      "note": ""
     },
     {
-      "name": "きじ",
-      "img": "Tsu__photo",
-      "twitter": "Tsu__photo",
-      "instagram": "tsu__photo"
+      "name": "和×🄺🄰🅉🅄",
+      "img": "kz_photographs",
+      "twitter": "kz_photographs",
+      "instagram": "kz_photographs__",
+      "note": ""
     },
     {
-      "name": "Kazumasa Nakajima",
-      "img": "Kazumasa__",
-      "twitter": "Kazumasa__",
-      "instagram": "kazumasa_photo"
-    },
-    {
-      "name": "若菜",
-      "img": "wakanadayooou",
-      "twitter": "wakanadayooou",
-      "instagram": "wakanadayooou"
-    },
-    {
-      "name": "Kou Kato",
-      "img": "ko_ref",
-      "twitter": "ko_ref",
-      "instagram": "ko_ref"
-    },
-    {
-      "name": "Atsuo Saijo",
-      "img": "xitiao",
-      "twitter": "xitiao",
-      "instagram": "atsuo.saijo"
-    },
-    {
-      "name": "tomosaki",
-      "img": "photono_gen",
-      "twitter": "photono_gen",
-      "instagram": "photono_gen"
+      "name": "naok",
+      "img": "nyaoayn",
+      "twitter": "nyaoayn",
+      "instagram": "naok_a2",
+      "note": "naok_a"
     },
     {
       "name": "ito_san",
       "img": "ito_san00",
       "twitter": "ito_san00",
-      "instagram": "ito_san00"
+      "instagram": "ito_san00",
+      "note": ""
     },
     {
       "name": "りる",
       "img": "cllriL",
       "twitter": "cllriL",
-      "instagram": "cllril"
+      "instagram": "cllril",
+      "note": "cllril"
+    },
+    {
+      "name": "Kazumasa Nakajima",
+      "img": "Kazumasa__",
+      "twitter": "Kazumasa__",
+      "instagram": "kazumasa_photo",
+      "note": ""
+    },
+    {
+      "name": "神谷",
+      "img": "kmyyyyy_07",
+      "twitter": "kmyyyyy_07",
+      "instagram": "kmyyyyy_07",
+      "note": "kmyyyyy_07"
+    },
+    {
+      "name": "Atsuo Saijo",
+      "img": "xitiao",
+      "twitter": "xitiao",
+      "instagram": "atsuo.saijo",
+      "note": ""
+    },
+    {
+      "name": "kix.",
+      "img": "KIX_dayinmylife",
+      "twitter": "KIX_dayinmylife",
+      "instagram": "kix.dayinmylife",
+      "note": ""
+    },
+    {
+      "name": "Kou Kato",
+      "img": "ko_ref",
+      "twitter": "ko_ref",
+      "instagram": "ko_ref",
+      "note": "ko_ref"
+    },
+    {
+      "name": "きじ",
+      "img": "Tsu__photo",
+      "twitter": "Tsu__photo",
+      "instagram": "tsu__photo",
+      "note": ""
+    },
+    {
+      "name": "若菜",
+      "img": "wakanadayooou",
+      "twitter": "wakanadayooou",
+      "instagram": "wakanadayooou",
+      "note": ""
+    },
+    {
+      "name": "tomosaki",
+      "img": "photono_gen",
+      "twitter": "photono_gen",
+      "instagram": "photono_gen",
+      "note": ""
     },
     {
       "name": "じょろきあ",
       "img": "johnjohn5798_p",
       "twitter": "johnjohn5798_p",
-      "instagram": "johnjohn5798_"
+      "instagram": "johnjohn5798_",
+      "note": ""
+    },
+    {
+      "name": "messi",
+      "img": "messi0601",
+      "twitter": "messi0601",
+      "instagram": "messi__0601",
+      "note": ""
+    },
+    {
+      "name": "てらぬ〜",
+      "img": "teranu_photo",
+      "twitter": "teranu_photo",
+      "instagram": "teranu_photo",
+      "note": ""
     },
     {
       "name": "mei",
       "img": "4_adiantum7",
       "twitter": "4_adiantum7",
-      "instagram": "m_adiantum"
+      "instagram": "m_adiantum",
+      "note": ""
     }
   ],
   "published": [
