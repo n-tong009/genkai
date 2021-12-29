@@ -7,7 +7,7 @@
     "STG": "http://stg.hoge.com/",
     "PROD": "http://prod.hoge.com/"
   },
-  "ASSETS_VERSION": "?p=2021120903",
+  "ASSETS_VERSION": "?p=2021123001",
   "CURRENT_DIR": "",
   "ABSOLUTE_DIR": false,
   "ASSETS_DIR": {
